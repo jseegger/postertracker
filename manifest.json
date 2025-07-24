@@ -4,11 +4,11 @@
   "description": "Automatischer EXIF-Import + benutzerdefinierte Pin-Farben pro Liste",
   "version": "1.0.0",
   "author": "Dein Name",
-  "icons": { "48": "https://YOUR_DOMAIN/images/icon48.png", "96": "https://YOUR_DOMAIN/images/icon96.png" },
+  "icons": { "48": "https://jseegger.github.io/postertracker/images/icon48.png", "96": "https://jseegger.github.io/postertracker/images/icon96.png" },
   "trello": {
     "clientScripts": [
       "https://unpkg.com/exif-js@2.7.0/dist/exif.js",
-      "https://YOUR_DOMAIN/js/exif-pin-powerup.js"
+      "https://jseegger.github.io/postertracker/js/exif-pin-powerup.js"
     ],
     "capabilities": {
       "card-buttons": { "callback": "renderImportButton" },
@@ -18,7 +18,7 @@
     },
     "authorization": {
       "type": "oauth",
-      "oauth": { "key": "YOUR_KEY" }
+      "oauth": { "key": "936db264990cf00e7c23d72d01c324c8" }
     }
   }
 }
