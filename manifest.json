@@ -4,17 +4,24 @@
   "description": "Automatischer EXIF-Import + benutzerdefinierte Pin-Farben pro Liste",
   "version": "1.0.0",
   "author": "Dein Name",
-  "icons": { "48": "https://jseegger.github.io/postertracker/images/icon48.png", "96": "https://jseegger.github.io/postertracker/images/icon96.png" },
+  "icons": {
+    "48": "https://jseegger.github.io/postertracker/images/icon48.png",
+    "96": "https://jseegger.github.io/postertracker/images/icon96.png"
+  },
   "trello": {
     "clientScripts": [
       "https://unpkg.com/exif-js@2.7.0/dist/exif.js",
       "https://jseegger.github.io/postertracker/js/exif-pin-powerup.js"
     ],
     "capabilities": {
-      "card-buttons": { "callback": "renderImportButton" },
-      "card-badges": { "callback": "badgeGPSImportStatus" },
-      "board-buttons": { "callback": "renderBoardButtons" },
-      "show-settings": { "callback": "showSettings" }
+      "card-buttons":      { "callback": "renderImportButton" },
+      "card-badges":       { "callback": "badgeGPSImportStatus" },
+      "board-buttons":     { "callback": "renderBoardButtons" },
+      "show-settings":     { "callback": "showSettings" },
+      
+      "show-authorization":    {},
+      "authorization-status":  {},
+      "on-enable":             {}
     },
     "authorization": {
       "type": "oauth",
