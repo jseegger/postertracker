@@ -1,0 +1,24 @@
+{
+  "id": "trello-exif-pin-powerup",
+  "name": "EXIF & Pin Color Power-Up",
+  "description": "Automatischer EXIF-Import + benutzerdefinierte Pin-Farben pro Liste",
+  "version": "1.0.0",
+  "author": "Dein Name",
+  "icons": { "48": "https://YOUR_DOMAIN/images/icon48.png", "96": "https://YOUR_DOMAIN/images/icon96.png" },
+  "trello": {
+    "clientScripts": [
+      "https://unpkg.com/exif-js@2.7.0/dist/exif.js",
+      "https://YOUR_DOMAIN/js/exif-pin-powerup.js"
+    ],
+    "capabilities": {
+      "card-buttons": { "callback": "renderImportButton" },
+      "card-badges": { "callback": "badgeGPSImportStatus" },
+      "board-buttons": { "callback": "renderBoardButtons" },
+      "show-settings": { "callback": "showSettings" }
+    },
+    "authorization": {
+      "type": "oauth",
+      "oauth": { "key": "YOUR_KEY" }
+    }
+  }
+}
